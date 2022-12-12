@@ -63,6 +63,7 @@ function buyTicket(){
     if(number > 0){
     currentLi.textContent = currentLi.textContent -1}
     else{document.querySelector("button#buy-ticket").textContent = "TICKETS SOLD OUT"
+        
   }
     })}
   buyTicket()
