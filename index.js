@@ -21,5 +21,10 @@ function fetchMovies(){
                document.getElementById("movie-poster");
                   img.src =
                films.poster;
+               //Adds a movies showtime to the DOM when the movie title is clicked
+               let showTime =
+               document.getElementById("showtime");
+                 showTime.textContent =
+               films.showtime;
 
 
