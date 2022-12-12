@@ -1,24 +1,123 @@
-img {width:400px;
-    height:300px;}
-h1{
-    color: rgb(10, 5, 48);
-    text-align: center;
-    font-size: 60px;
+/* re-usable classes */
+:root {
+    --colorOne:#161925;
+    --colorTwo: #23395B;
+    --colorThree: #C42021;
+    --colorFour: #8EA8C3;
+    --colorFive:#F5EFED;
+    --colorSix:#0A369D
   }
-
+/* html section */
+*{padding:0px;
+margin:0px;
+box-sizing:border-box;
+color:var(--colorTwo);
+font-family: Arial, Helvetica, sans-serif;
+}
+p#showtime-text{
+    position: relative;
+    color:var(--colorSix);
+}
+div#showtime{
+   position: relative;
+   top:-40px;
+   left:120px;
+   color: #C42021;
+}
+div#runtime{
+   position: relative;
+   top:-123px;
+   left:340px;
+   color: #C42021;
+}
+p#runtime-text{
+    position: relative;
+    top:-83px;
+    left:240px;
+    color:var(--colorSix);
+}
+/* section#hero-section */
+section#hero-section{
+    background-color: var(--colorFive);
+}
+img {width:500px;
+    height:500px;
+    border:3px solid black;
+    border-radius:10px;}
+h1{
+text-align: center;
+font-size:50px;
+background-color:var(--colorOne);
+color:white;
+display:inline-block;
+width:100%;
+}
+h2{
+    margin-left:100px;
+    font-size:35px;
+    text-decoration: underline;
+    padding-top:10px;
+    padding-bottom:10px;
+}
 div#movie-display{
 position: relative;
 left:500px;
-top: -300px;
+top:-570px;
 }
+ul#films li {
+    list-style:none;
+    font-size:25px;
+    margin-left:20px;
+    line-height:35px;
+}
+ul#films li:hover {
+color:var(--colorThree);
+}
+h3#movie-title{
+    font-size:35px;
+    margin-left:0px;
+}
+/* section #movie-tickets */
 section#movie-tickets{
     position: relative;
     left:700px;
-    top:-340px;
+    top:-710px;
 }
-
-
-
+.bottom-text{
+    line-height:40px ;
+    font-size:25px;
+}
+button{
+    font-size:25px;
+    height:60px;
+    width:300px;
+    border:0px;
+    background-color:var(--colorSix);
+    color:white;
+    border-radius:10px;
+    position:relative;
+    top:20px;
+    left:-125px;
+}
+div#tickets-remaining{
+    position: relative;
+    top:20px;
+    left:-100px;
+    color:var(--colorOne);
+    font-weight:bold;
+}
+div#ticket-counter{
+    position: relative;
+    top:25px;
+    font-size:40px;
+    background-color:var(--colorSix);
+    width:70px;
+    height:70px;
+    padding-top:15px;
+    padding-left:10px;
+    color:white;
+    border-radius:50%;
+}
 
 
 
