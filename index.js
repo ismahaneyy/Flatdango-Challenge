@@ -26,5 +26,10 @@ function fetchMovies(){
                document.getElementById("showtime");
                  showTime.textContent =
                films.showtime;
+               //Adds a movies runtime to the DOM when the movie title is clicked
+               let runTime =
+               document.getElementById("runtime");
+                 runTime.textContent =
+               `${films.runtime} Minutes`;
 
 
