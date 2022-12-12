@@ -1,43 +1,41 @@
-<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <title>Document</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- This adds the name of the application to the browser tab -->
+    <title>Flatdango</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
     <h1>Flatdango</h1>
-    <section>
-        <div id="movie-menu">
+<!-- This is the first section on the page containing the menu of movie titles
+and the current movie being displayed -->
+    <section id="hero-section">
+      <div id="movie-menu">
+<!-- This div contains the menu of movies titles -->
+        <ul id="films">
+         <li class="filmItem">PlaceHolder li</li>
           <h2>Movies</h2>
-          <ul id="films">
-            <li class="filmItem">PlaceHolder li</li>
-          </ul>
-        </div>
-        <div id="movie-display">
-          <h3 id="movie-title" class="movieTitle">Movie Title</h3>
-          <img
-            id="movie-poster"
-            src=""
-            alt="Movie Poster"
-          />
-          <div id="showtime" class="showTime">showtime</div>
-          <div id="runtime" class="runTime">runtime</div>
-        </div>
+        </ul>
+      </div>
+      <div id="movie-display">
+<!-- displays the movie poster, title, showtime and runtime on the page -->
+        <h3 id="movie-title" class="movieTitle">Movie Title</h3>
+        <img id="movie-poster" src="" alt="Movie Poster" />
+        <p class="bottom-text" id="showtime-text">Showtime:</p>
+        <div id="showtime" class="bottom-text">showtime</div>
+        <p class="bottom-text" id="runtime-text">Runtime:</p>
+        <div id="runtime" class="bottom-text">runtime</div>
+      </div>
       </section>
-
+<!-- This section contains the number of tickets available and the buy tickets button -->
       <section id="movie-tickets">
-        <div id="ticket-counter"></div>
-        <div>Tickets remaining</div>
-        <button id="buy-ticket">Buy Tickets</button>
+        <div id="ticket-counter" class="bottom-text"></div>
+        <div class="bottom-text" id="tickets-remaining">TICKETS REMAINING</div>
+        <button id="buy-ticket" >Buy Tickets</button>
       </section>
-      <script type="text/javascript" src="./index.js"></script>
-      
-  
-</body>
+<!-- links the javascript and html file -->
+    <script type="text/javascript" src="./index.js"></script>
+  </body>
 </html>
-
-
-
