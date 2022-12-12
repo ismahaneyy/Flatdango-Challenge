@@ -12,5 +12,14 @@ function fetchMovies(){
               (e)=>{let buttonContent =
                 document.querySelector("button#buy-ticket")
                 buttonContent.textContent = "Buy Tickets"
+                let title =
+                document.getElementById("movie-title");
+                   title.textContent =
+               films.title;
+//Adds a movies poster to the DOM when the movie title is clicked
+               let img =
+               document.getElementById("movie-poster");
+                  img.src =
+               films.poster;
 
 
